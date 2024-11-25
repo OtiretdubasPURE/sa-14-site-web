@@ -1,0 +1,187 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #121212;  
+    color: #E0E0E0; 
+}
+
+header {
+    background-color: #1f1f1f; 
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+nav {
+    text-align: center;
+    margin-top: 10px;
+}
+
+nav a {
+    color: #bbb; 
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #fff; /* Lien plus clair au survol */
+}
+
+section {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.services, .gallery {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+    font-family: "Gentium Book Plus", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.service, .project {
+    background-color: #2a2a2a; 
+    width: 30%;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); 
+    border-radius: 8px;
+    color: #E0E0E0; 
+}
+
+.project img {
+    width: 100%;          
+    height: 600px;        
+    object-fit: cover;   
+    border-radius: 8px;
+}
+
+.service h3, .project h3 {
+    color: #fff; 
+}
+
+.service p, .project p {
+    color: #ccc; 
+}
+
+.contact-form {
+    background-color: #2a2a2a; 
+    padding: 20px;
+    width: 50%;
+    margin: 0 auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); 
+    border-radius: 8px;
+}
+
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #555; 
+    border-radius: 4px;
+    background-color: #333; 
+    color: #fff; 
+}
+
+.contact-form input:focus, .contact-form textarea:focus {
+    border-color: #888; 
+}
+
+footer {
+    text-align: center;
+    background-color: #1f1f1f; 
+    color: white;
+    padding: 10px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    margin-top: auto;
+}
+
+
+/* SECTION: Présentation */
+#presentation {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: #1f1f1f;
+    color: #E0E0E0;
+    font-family: "Gentium Book Plus", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+#presentation h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.presentation {
+    background-color: #2a2a2a;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    border-radius: 8px;
+    color: #E0E0E0;
+    font-family: "Gentium Book Plus", serif;
+}
+
+.presentation p {
+    font-size: 1.1em;
+    color: #ccc;
+    line-height: 1.6;
+}
+
+@media only screen and (max-width: 768px) {
+    header h1 {
+        font-size: 2em;
+    }
+    
+    nav a {
+        margin: 0 10px;
+        font-size: 0.9em;
+    }
+
+    .services, .gallery {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .service, .project {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+
+    .contact-form {
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    header h1 {
+        font-size: 1.5em;
+    }
+    
+    nav a {
+        font-size: 0.8em;
+        margin: 0 8px;
+    }
+
+    .service, .project {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .contact-form {
+        width: 90%;
+    }
+}
