@@ -3,12 +3,12 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-image: url("./7069163-incroyable-complete-ciel-sombre-etoile-nuit-dans-la-nature-gratuit-photo.jpg");
+    background-image: url("background_wood.jpg");
     color: #E0E0E0; 
 }
 
 header {
-    background-color: #1f1f1f; 
+    background-color: rgba(31,31,31,0); 
     color: white;
     padding: 20px 0;
     text-align: center;
@@ -16,9 +16,11 @@ header {
 
 header h1 {
     margin: 0;
-    font-size: 2.5em;
+    font-size: 3em;
 }
-
+.ligne {
+    border-top: 3px solid #333030;
+}
 
 /*lien vers les autres pages*/
 nav {
@@ -27,14 +29,14 @@ nav {
 }
 
 nav a {
-    color: #bbb; 
+    color: #e6dfdf; 
     margin: 0 15px;
     text-decoration: none;
     font-weight: bold;
 }
 
 nav a:hover {
-    color: #fff; /* Lien plus clair au survol */
+    color: #9ca9e2; /* Lien plus clair au survol */
 }
 
 section {
@@ -45,7 +47,7 @@ section h2{
     font-size: larger;
 }
 
-.services, .gallery {
+.gallery {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
@@ -54,29 +56,20 @@ section h2{
     font-weight: 400;
     font-style: normal;
 }
-
-.service, .project {
-    background-color: #2a2a2a; 
-    width: 30%;
-    padding: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); 
-    border-radius: 8px;
-    color: #E0E0E0; 
+#gallery h2{
+    font-size: 200%;
 }
+
+#gallery h3, p {
+    font-size: 150%;
+}
+
 
 .project img {
-    width: 100%;          
-    height: 600px;        
+    width: 80%;          
+    height: 550px;        
     object-fit: cover;   
     border-radius: 8px;
-}
-
-.service h3, .project h3 {
-    color: #fff; 
-}
-
-.service p, .project p {
-    color: #ccc; 
 }
 
 .contact-form {
@@ -104,17 +97,39 @@ section h2{
 
 footer {
     text-align: center;
-    background-color: #1f1f1f; 
+    background-color: rgba(31,31,31,0);
     color: white;
     padding: 10px;
-    position: relative;
-    bottom: 0;
+    position: bottom;
     width: 100%;
-    margin-top: auto;
+    margin-bottom: auto;
+}
+/* section case autour */
+.case-autour {
+    margin: 30px auto;
+    max-width: 1200px;
+    padding: 20px;
 }
 
+.texte {
+    font-size: 140%;
+    font-family: "Gentium Book Plus", serif;
+    color: #f8f3da;
+}
 
-/* SECTION: Présentation */
+.image img{
+    width: 30%;
+
+}
+
+.image-texte {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+/* section Présentation */
 #presentation {
     padding: 40px 20px;
     text-align: center;
