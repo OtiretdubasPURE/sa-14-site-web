@@ -10,3 +10,6 @@
 4. Suit la normes W3C
 5. Hébergé sur github pages
 6. Avoir utilisé les outils flexbox et/ou css grid
+
+### lien github pages
+https://otiretdubaspure.github.io/sa-14-site-web/
